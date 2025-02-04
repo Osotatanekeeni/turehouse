@@ -13,7 +13,7 @@ export default function HeroSection() {
          {/* <div className='absolute left-0 top-0 z-0 size-full bg-cover bg-center' style={{ backgroundImage: `url(${HeroImage})` }}></div> */}
         {/* </div> */}
         {/* Navigation */}
-        <div className='relative z-10 flex flex-row items-center justify-between p-4 px-20 pt-8'>
+        <div className='relative z-10 flex flex-row items-center justify-between p-4 px-40 pt-8'>
             <div className='w-full'>
             <ul className='flex gap-3 tracking-wider text-white' style={{ fontFamily: 'Urbanist' }}>
                 <li className=''>HOME</li>
@@ -23,28 +23,28 @@ export default function HeroSection() {
             </div>
 
             <div className='w-full'>
-                <h1 className='text-center text-xl font-medium tracking-widest text-white'>TUREHOUSE</h1>
+                <h1 className='text-center text-4xl font-medium tracking-widest text-white'>TUREHOUSE</h1>
             </div>
 
             <div className='flex w-full justify-end'>
                 <ul className='flex justify-end gap-3 tracking-wider text-white' style={{ fontFamily: 'Urbanist' }}>
-                    <li>LOGIN</li>
+                    <li>LOG IN</li>
                     <li>CART (0)</li>
                 </ul>
             </div>
             
         </div>
         {/* <h1 className="relative z-10">BODY</h1> */}
-        <div className='px-20'>
-        <hr className=' relative z-10 w-full px-20' />
+        <div className='px-40'>
+        <hr className='relative z-10 w-full px-20'/>
         </div>
 
-        <div className='relative flex w-1/2 flex-col gap-3 p-20 text-white'>
-            <h2 className='text-6xl leading-snug tracking-widest'>Discover Timeless <br /> Furniture for <br /> Your Home</h2>
-            <p className='text-xl leading-loose tracking-widest'>Explore modern, elegant designs tailored to your lifestyle</p>
+        <div className='relative flex w-full flex-col gap-3 p-20 text-white'>
+            <h2 className='text-6xl text-center leading-snug tracking-widest font-semibold'>Discover Timeless <br /> Furniture for <br /> Your Home</h2>
+            <p className='text-xl text-center leading-loose tracking-widest'>Explore modern, elegant designs tailored to your lifestyle</p>
             
         </div>
-        <div className='px-20'>
+        <div className='flex justify-center'>
         <button className='relative rounded-xl bg-caribbeanCurrent p-3 px-8 tracking-widest text-white hover:border-caribbeanCurrent hover:bg-white hover:text-black'>Shop Now</button>
         </div>
 

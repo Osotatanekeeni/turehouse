@@ -14,7 +14,7 @@ function FurnitureCard({firstColor, secondColor, thirdColor, fourthColor, itemNa
   return (
     <div className='flex flex-col justify-end rounded-2xl' style={{ fontFamily: 'Urbanist' }}>
         {/* Image Section */}
-        <div className='flex h-full flex-col justify-between rounded-t-lg bg-pink p-4'>
+        <div className='flex h-full flex-col justify-between rounded-t-lg bg-grey p-4'>
             <div className=" flex justify-end -space-x-2 p-2">
                 <div className={`size-8 rounded-full ${firstColor}`}></div>
                 <div className={`size-8 rounded-full ${secondColor}`}></div>

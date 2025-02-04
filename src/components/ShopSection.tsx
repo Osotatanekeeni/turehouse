@@ -81,7 +81,7 @@ export default function ShopSection() {
             <button onClick={handleAllProductsClicked} className={`relative rounded-xl  p-3 tracking-widest ${allProductClicked ? "bg-caribbeanCurrent text-white" : "border-2 border-caribbeanCurrent bg-white text-black hover:bg-caribbeanCurrent hover:text-white"}`}>All Products</button>
             <button onClick={handleLivingRoomClicked} className={`relative rounded-xl  p-3 tracking-widest ${livingRoomClicked ? "bg-caribbeanCurrent text-white" : "border-2 border-caribbeanCurrent bg-white text-black hover:bg-caribbeanCurrent hover:text-white"}`}>Living Room</button>
             <button onClick={handleDiningClicked} className={`relative rounded-xl  p-3 tracking-widest ${diningClicked ? "bg-caribbeanCurrent text-white" : "border-2 border-caribbeanCurrent bg-white text-black hover:bg-caribbeanCurrent hover:text-white"}`}>Dining</button>
-            <button onClick={handleOfficeClicked} className={`relative rounded-xl  p-3 tracking-widest ${officeClicked ? "bg-caribbeanCurrent text-white" : "border-2 border-caribbeanCurrent bg-white text-black hover:bg-caribbeanCurrent hover:text-white"}`}>Officer</button>
+            <button onClick={handleOfficeClicked} className={`relative rounded-xl  p-3 tracking-widest ${officeClicked ? "bg-caribbeanCurrent text-white" : "border-2 border-caribbeanCurrent bg-white text-black hover:bg-caribbeanCurrent hover:text-white"}`}>Office</button>
             <button onClick={handleOutdoorClicked} className={`relative rounded-xl  p-3 tracking-widest ${outdoorClicked ? "bg-caribbeanCurrent text-white" : "border-2 border-caribbeanCurrent bg-white text-black hover:bg-caribbeanCurrent hover:text-white"}`}>Outdoor</button>
             <button onClick={handleMirrorClicked} className={`relative rounded-xl  p-3 tracking-widest ${mirrorsClicked ? "bg-caribbeanCurrent text-white" : "border-2 border-caribbeanCurrent bg-white text-black hover:bg-caribbeanCurrent hover:text-white"} `}>Mirrors & Vases</button>
             </div>
@@ -94,22 +94,35 @@ export default function ShopSection() {
 
         {/* Items section */}
         <div className='grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3'>
-                <FurnitureCard 
-                    firstColor='bg-white' 
-                    secondColor='bg-furnitureGreen' 
-                    thirdColor='bg-furnitureGrey' 
-                    fourthColor='bg-furnitureBrown' 
-                    itemName='Tee Living room Sofa' 
-                    itemPrice='265,000' 
-                    image={TeeLivingRoomSofa} />
-                <FurnitureCard firstColor='bg-furnitureDarkGreen' secondColor='bg-furnitureDarkGrey' thirdColor='bg-white' fourthColor='bg-furnitureOrange' itemName='Sleeper Sofa' itemPrice='560,000' image={SleeperSofa} />
-                <FurnitureCard firstColor='bg-white' secondColor='bg-furnitureGreen' thirdColor='bg-furnitureBrown' fourthColor='bg-furnitureRed' itemName='Standing Framed Mirror' itemPrice='65,000' image={StandingFramedMirror} />
-                <FurnitureCard firstColor='bg-furnitureDarkGreen' secondColor='bg-furniturePink' thirdColor='bg-white' fourthColor='bg-furnitureGreen' itemName='Ella Queen-sized Bed' itemPrice='390,000' image={EllaQueenSizedBed}/>
-                <FurnitureCard firstColor='bg-furnitureDarkGreen' secondColor='bg-furniturePink' thirdColor='bg-white' fourthColor='bg-furnitureGreen' itemName='Ella Queen-sized Bed' itemPrice='390,000' image={DoubleVase}/>
-                <FurnitureCard firstColor='bg-furnitureDarkGreen' secondColor='bg-furniturePink' thirdColor='bg-white' fourthColor='bg-furnitureGreen' itemName='Ella Queen-sized Bed' itemPrice='390,000' image={Dresser}/>
-                <FurnitureCard firstColor='bg-furnitureDarkGreen' secondColor='bg-furniturePink' thirdColor='bg-white' fourthColor='bg-furnitureGreen' itemName='Ella Queen-sized Bed' itemPrice='390,000' image={LivingRoomVase}/>
-                <FurnitureCard firstColor='bg-furnitureDarkGreen' secondColor='bg-furniturePink' thirdColor='bg-white' fourthColor='bg-furnitureGreen' itemName='Ella Queen-sized Bed' itemPrice='390,000' image={LshapedSofa}/>
+        {(allProductClicked || livingRoomClicked) && (
+        <>
+        <FurnitureCard 
+            firstColor='bg-white' 
+            secondColor='bg-furnitureGreen' 
+            thirdColor='bg-furnitureGrey' 
+            fourthColor='bg-furnitureBrown' 
+            itemName='Tee Living room Sofa' 
+            itemPrice='265,000' 
+            image={TeeLivingRoomSofa} 
+        />
+        <FurnitureCard firstColor='bg-furnitureDarkGreen' secondColor='bg-furnitureDarkGrey' thirdColor='bg-white' fourthColor='bg-furnitureOrange' itemName='Sleeper Sofa' itemPrice='560,000' image={SleeperSofa} />
+        <FurnitureCard firstColor='bg-furnitureDarkGreen' secondColor='bg-furniturePink' thirdColor='bg-white' fourthColor='bg-furnitureGreen' itemName='Ella Queen-sized Bed' itemPrice='390,000' image={DoubleVase}/>
+        <FurnitureCard firstColor='bg-furnitureDarkGreen' secondColor='bg-furniturePink' thirdColor='bg-white' fourthColor='bg-furnitureGreen' itemName='Ella Queen-sized Bed' itemPrice='390,000' image={LshapedSofa}/>
                 <FurnitureCard firstColor='bg-furnitureDarkGreen' secondColor='bg-furniturePink' thirdColor='bg-white' fourthColor='bg-furnitureGreen' itemName='Ella Queen-sized Bed' itemPrice='390,000' image={SideStool}/>
+        </>
+    )}
+
+                {(allProductClicked || mirrorsClicked) && (
+                    <FurnitureCard firstColor='bg-white' secondColor='bg-furnitureGreen' thirdColor='bg-furnitureBrown' fourthColor='bg-furnitureRed' itemName='Standing Framed Mirror' itemPrice='65,000' image={StandingFramedMirror} />
+                )}
+                {(allProductClicked) && (
+                    <>
+                    <FurnitureCard firstColor='bg-furnitureDarkGreen' secondColor='bg-furniturePink' thirdColor='bg-white' fourthColor='bg-furnitureGreen' itemName='Ella Queen-sized Bed' itemPrice='390,000' image={EllaQueenSizedBed}/>
+                
+                <FurnitureCard firstColor='bg-furnitureDarkGreen' secondColor='bg-furniturePink' thirdColor='bg-white' fourthColor='bg-furnitureGreen' itemName='Ella Queen-sized Bed' itemPrice='390,000' image={Dresser}/>
+                <FurnitureCard firstColor='bg-furnitureDarkGreen' secondColor='bg-furniturePink' thirdColor='bg-white' fourthColor='bg-furnitureGreen' itemName='Ella Queen-sized Bed' itemPrice='390,000' image={LivingRoomVase}/></>
+                )}
+                
             </div>
 
 

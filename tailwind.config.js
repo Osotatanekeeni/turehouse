@@ -17,6 +17,7 @@ export default {
         furnitureOrange: "#E69431",
         furnitureRed: "#E20000",
         pink: "#f0e6e6",
+        grey: "rgba(231, 231, 231, 1)",
         furnitureLightBrown: "#957762",
         furnitureLightBlue: "#0095FF",
         furniturePink: "#ECD8D7",

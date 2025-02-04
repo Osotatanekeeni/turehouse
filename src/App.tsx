@@ -2,6 +2,7 @@ import BestsellerSection from "./components/BestsellerSection";
 import HeroSection from "./components/HeroSection";
 import HighlightSection from "./components/HighlightSection";
 import ShopSection from "./components/ShopSection";
+import StorySection from "./components/StorySection";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <BestsellerSection />
       <ShopSection />
       <HighlightSection />
+      <StorySection />
     </main>
   );
 }

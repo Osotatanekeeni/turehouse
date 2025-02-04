@@ -22,7 +22,9 @@ export default {
         furnitureLightBlue: "#0095FF",
         furniturePink: "#ECD8D7",
         furnitureDarkGreen: "#00322C",
-        furnitureDarkGrey: "#606166"
+        furnitureDarkGrey: "#606166",
+        greenText: "rgba(0, 50, 44, 1)",
+        tureGreen: "rgba(0, 121, 107, 1)"
 
       }
     },

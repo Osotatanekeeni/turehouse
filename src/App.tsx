@@ -1,9 +1,15 @@
+import BestsellerSection from "./components/BestsellerSection";
 import HeroSection from "./components/HeroSection";
+import HighlightSection from "./components/HighlightSection";
+import ShopSection from "./components/ShopSection";
 
 function App() {
   return (
-    <main className="flex min-h-screen items-center justify-center gap-2 dark:bg-gray-800">
+    <main className="min-h-screen bg-offWhite">
       <HeroSection />
+      <BestsellerSection />
+      <ShopSection />
+      <HighlightSection />
     </main>
   );
 }

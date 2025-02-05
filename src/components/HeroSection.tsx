@@ -40,11 +40,11 @@ export default function HeroSection() {
         </div>
 
         <div className='relative flex w-full flex-col gap-3 p-20 text-white'>
-            <h2 className='text-6xl text-center leading-snug tracking-widest font-semibold'>Discover Timeless <br /> Furniture for <br /> Your Home</h2>
-            <p className='text-xl text-center leading-loose tracking-widest'>Explore modern, elegant designs tailored to your lifestyle</p>
+            <h2 className='text-center text-6xl font-semibold leading-snug tracking-widest'>Discover Timeless <br /> Furniture for <br /> Your Home</h2>
+            <p className='text-center text-xl leading-loose tracking-widest'>Explore modern, elegant designs tailored to your lifestyle</p>
             
         </div>
-        <div className='flex justify-center'>
+        <div className='flex justify-center transition-transform duration-300 hover:scale-105'>
         <button className='relative rounded-xl bg-caribbeanCurrent p-3 px-8 tracking-widest text-white hover:border-caribbeanCurrent hover:bg-white hover:text-black'>Shop Now</button>
         </div>
 

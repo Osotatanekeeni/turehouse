@@ -22,6 +22,7 @@ function BestsellerSection() {
                 <h2 className='text-center text-4xl font-medium tracking-widest text-darkGreen' style={{ fontFamily: 'Playfair Display' }}>OUR BESTSELLERS</h2>
             </div>
             <div className='grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3'>
+            <div className='transition-transform duration-300 hover:scale-105'>
                 <FurnitureCard 
                     firstColor='bg-white' 
                     secondColor='bg-furnitureGreen' 
@@ -30,13 +31,24 @@ function BestsellerSection() {
                     itemName='Tee Living room Sofa' 
                     itemPrice='265,000' 
                     image={TeeLivingRoomSofa} />
+                </div>
+                <div className='transition-transform duration-300 hover:scale-105'>
                 <FurnitureCard firstColor='bg-white' secondColor='bg-furnitureDarkGreen' 
                 thirdColor='bg-furnitureOrange' fourthColor='bg-furnitureRed' 
                 itemName='Bobby Single Sofa' itemPrice='65,000' image={BobbySingleSofa} />
+                </div>
+                <div className='transition-transform duration-300 hover:scale-105'>
                 <FurnitureCard firstColor='bg-furnitureDarkGreen' secondColor='bg-furnitureDarkGrey' thirdColor='bg-white' fourthColor='bg-furnitureOrange' itemName='Sleeper Sofa' itemPrice='560,000' image={SleeperSofa} />
+                </div>
+                <div className='transition-transform duration-300 hover:scale-105'>
                 <FurnitureCard firstColor='bg-white' secondColor='bg-furnitureGreen' thirdColor='bg-furnitureBrown' fourthColor='bg-furnitureRed' itemName='Standing Framed Mirror' itemPrice='65,000' image={StandingFramedMirror} />
+                </div>
+                <div className='transition-transform duration-300 hover:scale-105'>
                 <FurnitureCard firstColor='bg-white' secondColor='bg-furnitureDarkGreen' thirdColor='bg-furnitureDarkGrey' fourthColor='bg-furnitureLightBlue' itemName='Luxury Bedside Stool' itemPrice='125,000' image={LuxuryBedsideStool}/>
+                </div>
+                <div className='transition-transform duration-300 hover:scale-105'>
                 <FurnitureCard firstColor='bg-furnitureDarkGreen' secondColor='bg-furniturePink' thirdColor='bg-white' fourthColor='bg-furnitureGreen' itemName='Ella Queen-sized Bed' itemPrice='390,000' image={EllaQueenSizedBed}/>
+                </div>
             </div>
             </div>
             <div className='flex justify-center pb-20'>

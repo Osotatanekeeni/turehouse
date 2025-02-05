@@ -12,7 +12,7 @@ interface IFurnitureCard {
 }
 function FurnitureCard({firstColor, secondColor, thirdColor, fourthColor, itemName, itemPrice, image}: IFurnitureCard) {
   return (
-    <div className='flex flex-col justify-end rounded-2xl' style={{ fontFamily: 'Urbanist' }}>
+    <div className='flex size-full flex-col justify-end rounded-2xl' style={{ fontFamily: 'Urbanist' }}>
         {/* Image Section */}
         <div className='flex h-full flex-col justify-between rounded-t-lg bg-grey p-4'>
             <div className=" flex justify-end -space-x-2 p-2">

@@ -11,7 +11,7 @@ import StandingFramedMirror from "../images/StandingFramedMirror.png";
 import TeeLivingRoomSofa from "../images/TeeLivingRoomSofa.png";
 
 export default function ShopSection() {
-    const [allProductClicked, setAllProductClicked] = useState(false);
+    const [allProductClicked, setAllProductClicked] = useState(true);
     const [livingRoomClicked, setLivingRoomClicked] = useState(false);
     const [diningClicked, setDiningClicked] = useState(false);
     const [officeClicked, setOfficeClicked] = useState(false);

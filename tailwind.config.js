@@ -26,6 +26,11 @@ export default {
         greenText: "rgba(0, 50, 44, 1)",
         tureGreen: "rgba(0, 121, 107, 1)"
 
+      },
+      letterSpacing: {
+        'extra-wide': '0.2em',
+        'super-wide': '0.4em',
+        'ultra-wide': '0.6em',
       }
     },
     fontFamily: {

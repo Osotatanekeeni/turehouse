@@ -1,4 +1,5 @@
 import BestsellerSection from "./components/BestsellerSection";
+import FooterSection from "./components/FooterSection";
 import HeroSection from "./components/HeroSection";
 import HighlightSection from "./components/HighlightSection";
 import PartnersSection from "./components/PartnersSection";
@@ -18,6 +19,7 @@ function App() {
       <ReviewSection />
       <PartnersSection />
       <SubscribeSection />
+      <FooterSection />
     </main>
   );
 }

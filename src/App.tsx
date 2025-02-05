@@ -1,6 +1,7 @@
 import BestsellerSection from "./components/BestsellerSection";
 import HeroSection from "./components/HeroSection";
 import HighlightSection from "./components/HighlightSection";
+import PartnersSection from "./components/PartnersSection";
 import ReviewSection from "./components/ReviewSection";
 import ShopSection from "./components/ShopSection";
 import StorySection from "./components/StorySection";
@@ -14,6 +15,7 @@ function App() {
       <HighlightSection />
       <StorySection />
       <ReviewSection />
+      <PartnersSection />
     </main>
   );
 }

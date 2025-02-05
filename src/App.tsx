@@ -10,7 +10,7 @@ import SubscribeSection from "./components/SubscribeSection";
 
 function App() {
   return (
-    <main className="min-h-screen bg-offWhite">
+    <div className="m-0 min-h-screen overflow-x-hidden w-screen bg-offWhite">
       <HeroSection />
       <BestsellerSection />
       <ShopSection />
@@ -20,7 +20,7 @@ function App() {
       <PartnersSection />
       <SubscribeSection />
       <FooterSection />
-    </main>
+    </div>
   );
 }
 

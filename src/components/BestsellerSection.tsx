@@ -1,4 +1,3 @@
-import React from 'react'
 import FurnitureCard from './FurnitureCard'
 import BobbySingleSofa from "../images/BobbySingleSofa.png";
 // import DoubleVase from "../images/DoubleVase.png";
@@ -17,7 +16,7 @@ function BestsellerSection() {
   return (
     <div>
         {/* Bestsellers section */}
-        <div className='px-4 md:px-20 py-10'>
+        <div className='px-4 py-10 md:px-20'>
             <div className='flex flex-col gap-3 p-10'>
                 <h2 className='text-center text-4xl font-medium tracking-widest text-darkGreen' style={{ fontFamily: 'Playfair Display' }}>OUR BESTSELLERS</h2>
             </div>

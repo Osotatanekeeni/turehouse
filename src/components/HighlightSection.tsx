@@ -1,4 +1,3 @@
-import React from 'react'
 import BarrelChair from '../images/BarrelChair.png'
 import Furnitures from "../images/Furnitures.png"
 

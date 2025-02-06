@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import FurnitureCard from './FurnitureCard'
 import DoubleVase from "../images/DoubleVase.png";
 import Dresser from "../images/Dresser.png";
@@ -72,7 +72,7 @@ export default function ShopSection() {
         setMirrorsClicked(true);
     }
   return (
-    <div className='px-4 md:px-20 py-10'>
+    <div className='px-4 py-10 md:px-20'>
         <p className='py-5 tracking-widest'>Shop</p>
         {/* buttons div */}
         <div className='pb-10'>

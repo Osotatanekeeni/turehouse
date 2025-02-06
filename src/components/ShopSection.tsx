@@ -72,12 +72,12 @@ export default function ShopSection() {
         setMirrorsClicked(true);
     }
   return (
-    <div className='px-20 py-10'>
+    <div className='px-4 md:px-20 py-10'>
         <p className='py-5 tracking-widest'>Shop</p>
         {/* buttons div */}
         <div className='pb-10'>
             {/* Left buttons */}
-            <div className='flex gap-4'>
+            <div className='flex gap-4 overflow-x-auto'>
             <button onClick={handleAllProductsClicked} className={`relative rounded-xl  p-3 tracking-widest ${allProductClicked ? "bg-caribbeanCurrent text-white" : "border-2 border-caribbeanCurrent bg-white text-black hover:bg-caribbeanCurrent hover:text-white"}`}>All Products</button>
             <button onClick={handleLivingRoomClicked} className={`relative rounded-xl  p-3 tracking-widest ${livingRoomClicked ? "bg-caribbeanCurrent text-white" : "border-2 border-caribbeanCurrent bg-white text-black hover:bg-caribbeanCurrent hover:text-white"}`}>Living Room</button>
             <button onClick={handleDiningClicked} className={`relative rounded-xl  p-3 tracking-widest ${diningClicked ? "bg-caribbeanCurrent text-white" : "border-2 border-caribbeanCurrent bg-white text-black hover:bg-caribbeanCurrent hover:text-white"}`}>Dining</button>
@@ -111,13 +111,13 @@ export default function ShopSection() {
         <FurnitureCard firstColor='bg-furnitureDarkGreen' secondColor='bg-furnitureDarkGrey' thirdColor='bg-white' fourthColor='bg-furnitureOrange' itemName='Sleeper Sofa' itemPrice='560,000' image={SleeperSofa} />
         </div>
         <div className='transition-transform duration-300 hover:scale-105'>
-        <FurnitureCard firstColor='bg-furnitureDarkGreen' secondColor='bg-furniturePink' thirdColor='bg-white' fourthColor='bg-furnitureGreen' itemName='Ella Queen-sized Bed' itemPrice='390,000' image={DoubleVase}/>
+        <FurnitureCard firstColor='bg-furnitureDarkGreen' secondColor='bg-furniturePink' thirdColor='bg-white' fourthColor='bg-furnitureGreen' itemName='Tats Queen-sized Bed' itemPrice='390,000' image={DoubleVase}/>
         </div>
         <div className='transition-transform duration-300 hover:scale-105'>
-        <FurnitureCard firstColor='bg-furnitureDarkGreen' secondColor='bg-furniturePink' thirdColor='bg-white' fourthColor='bg-furnitureGreen' itemName='Ella Queen-sized Bed' itemPrice='390,000' image={LshapedSofa}/>
+        <FurnitureCard firstColor='bg-furnitureDarkGreen' secondColor='bg-furniturePink' thirdColor='bg-white' fourthColor='bg-furnitureGreen' itemName='Tats Queen-sized Bed' itemPrice='390,000' image={LshapedSofa}/>
         </div>
         <div className='transition-transform duration-300 hover:scale-105'>
-                <FurnitureCard firstColor='bg-furnitureDarkGreen' secondColor='bg-furniturePink' thirdColor='bg-white' fourthColor='bg-furnitureGreen' itemName='Ella Queen-sized Bed' itemPrice='390,000' image={SideStool}/>
+                <FurnitureCard firstColor='bg-furnitureDarkGreen' secondColor='bg-furniturePink' thirdColor='bg-white' fourthColor='bg-furnitureGreen' itemName='Tats Queen-sized Bed' itemPrice='390,000' image={SideStool}/>
                 </div>
         </>
     )}
@@ -130,14 +130,14 @@ export default function ShopSection() {
                 {(allProductClicked) && (
                     <>
                     <div className='transition-transform duration-300 hover:scale-105'>
-                    <FurnitureCard firstColor='bg-furnitureDarkGreen' secondColor='bg-furniturePink' thirdColor='bg-white' fourthColor='bg-furnitureGreen' itemName='Ella Queen-sized Bed' itemPrice='390,000' image={EllaQueenSizedBed}/>
+                    <FurnitureCard firstColor='bg-furnitureDarkGreen' secondColor='bg-furniturePink' thirdColor='bg-white' fourthColor='bg-furnitureGreen' itemName='Tats Queen-sized Bed' itemPrice='390,000' image={EllaQueenSizedBed}/>
                     </div>
                 
                     <div className='transition-transform duration-300 hover:scale-105'>
-                <FurnitureCard firstColor='bg-furnitureDarkGreen' secondColor='bg-furniturePink' thirdColor='bg-white' fourthColor='bg-furnitureGreen' itemName='Ella Queen-sized Bed' itemPrice='390,000' image={Dresser}/>
+                <FurnitureCard firstColor='bg-furnitureDarkGreen' secondColor='bg-furniturePink' thirdColor='bg-white' fourthColor='bg-furnitureGreen' itemName='Tats Queen-sized Bed' itemPrice='390,000' image={Dresser}/>
                 </div>
                 <div className='transition-transform duration-300 hover:scale-105'>
-                <FurnitureCard firstColor='bg-furnitureDarkGreen' secondColor='bg-furniturePink' thirdColor='bg-white' fourthColor='bg-furnitureGreen' itemName='Ella Queen-sized Bed' itemPrice='390,000' image={LivingRoomVase}/>
+                <FurnitureCard firstColor='bg-furnitureDarkGreen' secondColor='bg-furniturePink' thirdColor='bg-white' fourthColor='bg-furnitureGreen' itemName='Tats Queen-sized Bed' itemPrice='390,000' image={LivingRoomVase}/>
                     </div>
                     </>
                 )}

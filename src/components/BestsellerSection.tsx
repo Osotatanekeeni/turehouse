@@ -17,7 +17,7 @@ function BestsellerSection() {
   return (
     <div>
         {/* Bestsellers section */}
-        <div className='px-20 py-10'>
+        <div className='px-4 md:px-20 py-10'>
             <div className='flex flex-col gap-3 p-10'>
                 <h2 className='text-center text-4xl font-medium tracking-widest text-darkGreen' style={{ fontFamily: 'Playfair Display' }}>OUR BESTSELLERS</h2>
             </div>
@@ -47,7 +47,7 @@ function BestsellerSection() {
                 <FurnitureCard firstColor='bg-white' secondColor='bg-furnitureDarkGreen' thirdColor='bg-furnitureDarkGrey' fourthColor='bg-furnitureLightBlue' itemName='Luxury Bedside Stool' itemPrice='125,000' image={LuxuryBedsideStool}/>
                 </div>
                 <div className='transition-transform duration-300 hover:scale-105'>
-                <FurnitureCard firstColor='bg-furnitureDarkGreen' secondColor='bg-furniturePink' thirdColor='bg-white' fourthColor='bg-furnitureGreen' itemName='Ella Queen-sized Bed' itemPrice='390,000' image={EllaQueenSizedBed}/>
+                <FurnitureCard firstColor='bg-furnitureDarkGreen' secondColor='bg-furniturePink' thirdColor='bg-white' fourthColor='bg-furnitureGreen' itemName='Tats Queen-sized Bed' itemPrice='390,000' image={EllaQueenSizedBed}/>
                 </div>
             </div>
             </div>

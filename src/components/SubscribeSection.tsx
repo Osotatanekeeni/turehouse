@@ -3,7 +3,7 @@ import NewsletterImage from "../images/Newsletter.png"
 
 function SubscribeSection() {
   return (
-    <div className='flex items-center justify-around pt-10'>
+    <div className='flex px-4 md:px-0 items-center justify-around pt-10'>
         <img src={NewsletterImage} />
     </div>
   )

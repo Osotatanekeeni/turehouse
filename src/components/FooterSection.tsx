@@ -51,7 +51,7 @@ function FooterSection() {
           </ul>
         </div>
       </div>
-      <div className="text-center text-9xl tracking-extra-wide font-bold" style={{ fontFamily: "Playfair Display"}}>
+      <div className="text-center text-5xl md:text-9xl tracking-extra-wide font-bold" style={{ fontFamily: "Playfair Display"}}>
         TureHouse
       </div>
     </div>
